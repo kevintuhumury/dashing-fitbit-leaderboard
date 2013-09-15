@@ -93,6 +93,10 @@ When you're using a Hamlified dashboard layout (hey, you're already using a Haml
 
 Now, if you haven't already, authorize the widget over at the Fitbit website as described above. Once that's done, you should be able to start using it!
 
+## Preview
+
+![image](https://f.cloud.github.com/assets/412952/1145366/36c9a3e2-1e0d-11e3-9afe-99f8a9cbe491.png)
+
 ## Copyright
 
 Copyright 2013 Kevin Tuhumury. Released under the MIT License. Fitbit is a registered trademark and service mark of Fitbit, Inc. The Dashing widget is designed for use with the Fitbit platform. This product is not put out by Fitbit, and Fitbit does not service or warrant the functionality of this product.

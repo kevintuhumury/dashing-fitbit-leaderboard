@@ -9,8 +9,10 @@ An example of the widget can be viewed [below](https://github.com/kevintuhumury/
 [Fitgem](https://github.com/whazzmaster/fitgem) is a dependency of the Fitbit Leaderboard widget. So, add `fitgem` to the Gemfile of your Dashing dashboard:
 
 ```ruby
-gem "fitgem"
+gem "fitgem", github: "kevintuhumury/fitgem"
 ```
+
+Notice the `github: "kevintuhumury/fitgem"` part. The `fitgem` gem doesn't include the required Fitbit API calls needed for this widget yet, that's why my version of the `fitgem` gem is required. Once the feature has been merged, we can remove the `github: "kevintuhumury/fitgem"` part. This README will be updated at that time aswell.
 
 This widget has been [Haml](http://haml.info/)ified (we're using a HAML template in the `/widgets/fitbit` directory instead of an HTML template), so besides the above you'll also need to add `haml` to the Gemfile (if you haven't already):
 

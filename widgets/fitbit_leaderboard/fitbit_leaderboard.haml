@@ -1,0 +1,20 @@
+%h1(class="title")
+  %span Fitbit
+
+%span(id="data")
+  %h3
+    %span Weekly Leaderboard
+    %span(data-showif="people.length | gt 5") (Top 5)
+
+  %ul
+    %li(data-foreach-person="people" data-bind-class="person.style")
+      %img(data-bind-src="person.avatar")
+      .name(data-bind="person.name")
+      .steps(data-bind="person.steps | append ' steps'")
+      .rank(data-bind="person.rank")
+
+%span(id="error")
+  %h2 Uh Oh.
+  %p(data-bind="error")
+
+%p(class="updated-at" data-bind="updatedAtMessage")

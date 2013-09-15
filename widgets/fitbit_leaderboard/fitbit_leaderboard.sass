@@ -1,0 +1,101 @@
+$background-color: #15aaaa
+$highlight: #5ac7c8
+
+.widget-fitbit-leaderboard
+  position: relative
+  background-color: $background-color
+
+  h1
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100px
+    background-image: url("fitbit/fitbit.png")
+    background-position: center 50px
+    background-repeat: no-repeat
+    background-size: 25%
+
+    span
+      display: none
+
+  h2
+    display: block
+    vertical-align: middle
+    font-weight: 400
+    text-transform: none
+
+  h3
+    text-transform: uppercase
+    font-size: 10px
+    letter-spacing: 2px
+    margin: 58px 0 10px
+
+  #data
+    display: none
+
+    ul
+      margin-left: 10px
+      width: 256px
+      min-height: 222px
+
+      li
+        position: relative
+        display: block
+        margin-bottom: 3px
+        padding: 2px 40px 0 45px
+        height: 40px
+
+        img
+          position: absolute
+          top: 0
+          left: 0
+          width: 40px
+          height: 40px
+          border: 1px solid darken($background-color, 5%)
+
+        .rank
+          background-color: $highlight
+          position: absolute
+          top: 0
+          right: 0
+          width: 42px
+          height: 42px
+          text-align: center
+          vertical-align: middle
+          line-height: 42px
+
+        .name
+          overflow: hidden
+          text-overflow: ellipsis
+          white-space: nowrap
+          width: 140px
+          font-size: 14px
+          text-align: left
+          color: lighten($highlight, 20%)
+
+        .steps
+          font-size: 12px
+          text-align: left
+
+        &.me
+          background-color: darken($background-color, 2%)
+
+          .rank
+            background-color: darken($background-color, 2%)
+
+  #error
+    display: none
+
+    h2
+      font-size: 40px
+
+    p
+      font-size: 10px
+
+  p
+    &.updated-at
+      text-transform: uppercase
+      letter-spacing: 1px
+      font-size: 10px
+      color: lighten($background-color, 15%)
